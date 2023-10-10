@@ -5,10 +5,18 @@ export default function Menu() {
     <>
       <main className="menu">
         <h2>Our menu</h2>
-        <Pizza />
-        <Pizza />
-        <Pizza />
-        <Pizza />
+        <Pizza
+          name="Pizza Focaccia"
+          photoName="pizzas/focaccia.jpg"
+          ingrdients="Bread with italian olive oil and rosemary"
+          price={100}
+        />
+        <Pizza
+          name="Pizza Margherita"
+          photoName="pizzas/margherita.jpg"
+          ingrdients="Tomato and mozarella"
+          price={120}
+        />
       </main>
     </>
   );

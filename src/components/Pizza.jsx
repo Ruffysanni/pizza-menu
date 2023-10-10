@@ -1,10 +1,15 @@
-export default function Pizza() {
+/* eslint-disable react/prop-types */
+export default function Pizza(props) {
+  console.log(props);
   return (
     <>
       <div className="pizzas">
-        <img src="pizzas/focaccia.jpg" alt="pizza-pic1" />
-        <h3>Pizza Focaccia</h3>
-        <p>Bread with italian olive oil and rosemary</p>
+        <img src={props.photoName} alt={props.name} />
+        <div>
+          <h3>{props.name}</h3>
+          <p>{props.ingrdients}</p>
+          <span>price: {props.price}</span>
+        </div>
       </div>
     </>
   );

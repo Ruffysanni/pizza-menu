@@ -8,3 +8,5 @@ export default function Header() {
     </>
   );
 }
+
+//Authentic italian cuisine. 6 creative dishes to choose from. all from our stone oven, all organic, all delicious.

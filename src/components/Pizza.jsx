@@ -1,16 +1,17 @@
 /* eslint-disable react/prop-types */
-export default function Pizza(props) {
-  console.log(props);
+export default function Pizza({ pizzaObj }) {
+  console.log(pizzaObj);
+  if (pizzaObj.soldOut) return null;
   return (
     <>
-      <div className="pizzas">
-        <img src={props.photoName} alt={props.name} />
+      <li className="pizza">
+        <img src={pizzaObj.photoName} alt={name} />
         <div>
-          <h3>{props.name}</h3>
-          <p>{props.ingrdients}</p>
-          <span>price: {props.price}</span>
+          <h3>{pizzaObj.name}</h3>
+          <p>{pizzaObj.ingrdients}</p>
+          <span>price: {pizzaObj.price}</span>
         </div>
-      </div>
+      </li>
     </>
   );
 }
